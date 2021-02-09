@@ -41,10 +41,16 @@ nav{
     border-bottom: 2px solid rgb(56, 68, 77);
 }
 
+nav .container{
+    display: flex;
+    justify-content: space-between;
+}
+
 nav ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    flex: 1;
 }
 
 nav ul li{
@@ -52,6 +58,8 @@ nav ul li{
     color: white;
     font-weight: bold;
     cursor: pointer;
+    margin: auto 0;
+    flex: 1;
 }
 
 nav ul li.active{
@@ -110,5 +118,48 @@ nav ul li.active{
 .repo-data li a{
     font-size: 16px !important;
     font-weight: bold !important;
-    color: rgb(244, 93, 34);;
+    color: rgb(244, 93, 34);
+}
+
+.search-form input{
+    background: rgb(37, 51, 65);
+    border-radius: 15px;
+    padding: .75em .5em;
+    outline: none;
+    color: white;
+    border: 2px solid rgb(244, 93, 34);
+    width: 200px;
+}
+
+
+.search-form .submit-btn{
+    background: none;
+    border-radius: 15px;
+    padding: .5em .25em;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: .25em;
+    margin: auto 1em;
+}
+
+@media(max-width:768px){
+    nav .container{
+        flex-direction: column;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    .search-form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-form input{
+        flex: 1;
+    }
+
+
 }
