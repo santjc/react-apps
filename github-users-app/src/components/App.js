@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Loading from "./Loading";
 import RepoGrid from "./RepoGrid";
 import "./css/style.css";
@@ -57,6 +58,7 @@ export default class App extends React.Component {
         ) : (
           <RepoGrid repos={this.state.repos} />
         )}
+        <Footer/>
       </div>
     );
   }
