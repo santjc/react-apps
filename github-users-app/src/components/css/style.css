@@ -89,6 +89,9 @@ nav ul li.active{
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background-size: 90% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
 }
 
 .repo-data{
